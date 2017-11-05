@@ -3,13 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package matador;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * @author sigur
  */
 public class Matador {
+    public static List<FieldInterface> allFields = new ArrayList<>();
+    public static Dice dice = new Dice();
+
 
     /**
      * @param args the command line arguments
