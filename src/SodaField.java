@@ -10,4 +10,11 @@ public class SodaField extends GroupOwnebleField {
     int getGroupRent(int groupCount) {
         return rent*Matador.dice.lastThrow()*groupCount;
     }
+        
+    @Override
+    public void consequense(Player poorPlayer) {
+        if (this.getOwner() != null && poorPlayer != getOwner()) {
+            getGroupRent(this.getOwner().getSodaList());
+        }
+    }
 }

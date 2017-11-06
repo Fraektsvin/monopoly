@@ -13,6 +13,9 @@ public class FerryField extends GroupOwnebleField {
 
     @Override
     public void consequense(Player poorPlayer) {
+        if (this.getOwner() != null && poorPlayer != getOwner()) {
+            getGroupRent(this.getOwner().getFerryList());
+        }
     }
 }
 

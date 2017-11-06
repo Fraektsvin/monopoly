@@ -1,3 +1,3 @@
 public enum FieldGroup {
-    FARRIES,SODA;
+    FARRIES, SODA;
 }
